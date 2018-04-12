@@ -54,29 +54,29 @@ public class SalesAssociate // defining class
 		sales = keyboard.nextDouble (); // value from keyboard
 	}
 
- /**
-  * write down input from keyboard and text
-  */
+	/**
+	 * write down input from keyboard and text
+	 */
 	public void writeOutput () // method writeOutput
 	{
 		System.out.println ("Name: " + name); // print out text
 		System.out.println ("Sales: $" + sales);// print out text
 	}
 
-/**
- * method getName is for getting value of name
- * @return name
- */
+	/**
+	 * method getName is for getting value of name
+	 * @return name
+	 */
 	public String getName () // method getName
 	{
 		return name; //returning value of name
 	}
 
 
-/**
- * method getName is for getting value of sales
- * @return sales
- */
+	/**
+	 * method getName is for getting value of sales
+	 * @return sales
+	 */
 	public double getSales () //method getsales
 	{
 		return sales; //returning value of sales

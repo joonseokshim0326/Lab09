@@ -19,15 +19,15 @@ public class SalesReporter // defining class Salesreporter
 	 */
 	public void getData () // defining method getData
 	{
-		Scanner keyboard = new Scanner (System.in); //
+		Scanner keyboard = new Scanner (System.in); // input from keyboard
 		System.out.println ("Enter number of sales associates:"); // print out text 
 		numberOfAssociates = keyboard.nextInt (); // get number from keyboard input
-		team = new SalesAssociate [numberOfAssociates + 1]; // 
+		team = new SalesAssociate [numberOfAssociates + 1]; // array declare
 		for (int i = 1 ; i <= numberOfAssociates ; i++) // condition of loop
 		{
 			team [i] = new SalesAssociate (); // array declaration
 			System.out.println ("Enter data for associate " + i); // print out text
-			team [i].readInput (); // 
+			team [i].readInput (); // reading input from keyboard
 			System.out.println (); //  print out text
 		}
 	}
@@ -38,12 +38,12 @@ public class SalesReporter // defining class Salesreporter
 	 */
 	public void computeStats () // defining method computeStats
 	{
-		double nextSales = team [1].getSales (); // 
-		highestSales = nextSales;
-		double sum = nextSales; // 
+		double nextSales = team [1].getSales (); // put value of getslaes
+		highestSales = nextSales; // value of getsales
+		double sum = nextSales; // value of nextsales to sum
 		for (int i = 2 ; i <= numberOfAssociates ; i++) // conditon of loop
 		{
-			nextSales = team [i].getSales (); 
+			nextSales = team [i].getSales (); //put  value of getsales
 			sum = sum + nextSales; // add value of nextSales to sum
 			if (nextSales > highestSales) // condition of implementation
 				highestSales = nextSales; //highest sales among sales of associates
